@@ -1,13 +1,13 @@
 name := "sparklens"
 organization := "com.qubole"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.13"
 
-crossScalaVersions := Seq("2.10.6", "2.11.8")
+crossScalaVersions := Seq("2.10.6", "2.11.12", "2.12.13")
 
 spName := "qubole/sparklens"
 
-sparkVersion := "2.0.0"
+sparkVersion := "3.2.0"
 
 spAppendScalaVersion := true
 
