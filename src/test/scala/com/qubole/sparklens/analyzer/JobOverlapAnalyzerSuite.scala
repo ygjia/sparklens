@@ -21,12 +21,11 @@ package com.qubole.sparklens.analyzer
 import com.qubole.sparklens.common.{AggregateMetrics, AppContext, ApplicationInfo}
 import com.qubole.sparklens.timespan.{ExecutorTimeSpan, HostTimeSpan, JobTimeSpan, StageTimeSpan}
 import com.qubole.sparklens.helper.JobOverlapHelper
-
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
 import scala.collection.mutable
 
-class JobOverlapAnalyzerSuite extends FunSuite {
+class JobOverlapAnalyzerSuite extends AnyFunSuite {
 
   def createDummyAppContext(): AppContext = {
 

@@ -20,13 +20,17 @@ libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.6" % "p
 
 libraryDependencies += "org.apache.httpcomponents" % "httpmime" % "4.5.6" % "provided"
 
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.0" % "test"
+
+libraryDependencies += "org.scalatest" %% "scalatest-funsuite" % "3.2.0" % "test"
+
 test in assembly := {}
 
 testOptions in Test += Tests.Argument("-oF")
 
-scalacOptions ++= Seq("-target:jvm-1.7")
+scalacOptions ++= Seq("-target:jvm-1.8")
 
-javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
+javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 publishMavenStyle := true
 
